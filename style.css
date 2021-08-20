@@ -1,0 +1,361 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+ 
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.top-screen {
+  height: 100vh;
+  padding-top: 20px;
+  background-image: url('images/baner.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+  
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 167px;
+}
+
+.logo {
+  
+  margin-right: 20px;
+  cursor:pointer;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin: 0 30px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size:16px;
+  color:white;
+}
+
+.menu-item + .menu-item {
+  margin-left: 25px;
+}
+
+
+
+.menu-link {
+  margin-left: 50px;
+  color:white;
+  text-decoration: none;
+  opacity: .75;
+  
+  transition: opacity 0.1s linear;
+}
+.menu-link:first-child {
+  margin-left: 0;
+}
+.menu-link:hover {
+  text-decoration: underline;
+  opacity: 1;
+  color:orangered;
+}
+
+.hero {
+    color:white;
+    width:700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+   .hero-subtitle{
+       font-size:50px;
+       letter-spacing: 0.5em;
+   }
+  .hero-title {
+    margin: 0 0 39px;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 86px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+  }
+  
+  .hero-descr {
+    max-width: 500px;
+    margin: 0 auto 39px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+
+  }
+
+  /* ABOUT */
+  .team-history{
+    margin-top: 95px;
+    text-align: center;
+    line-height: 2;
+  }
+  .team-history-title{
+    font-size:28px;
+  }
+  .team-history-descr{
+    font-size:16px;
+  }
+  .container{
+    width:975px;
+  }
+  .logos{
+    display:block;
+  }
+  .infinity-logo{
+    width:200px;
+    margin-right:50px;
+  }
+  .members-title{
+    font-size:28px;
+    text-align:center;
+    margin-top: 180px;
+    
+  }
+  .members-link-list li {
+    margin-left:10px;
+  }
+  .wrapper{
+    display:grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(3,250px);
+    grid-column-gap:70px;
+    grid-row-gap:120px;
+    justify-content: center;
+    text-align: center;
+    margin-top:100px;
+    
+  }
+  .wrapper div{
+    background-color:rgb(62, 62, 161);
+    width:300px;
+    height:300px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .wrapper div:hover .img{
+    
+    transform:scale(1.2);
+  }
+  .wrapper div:hover .img img{
+    opacity:.1;
+  }
+  .members-link-list{
+    display: flex;
+    list-style: none;
+    margin-left:0 auto;
+  }
+  .wrapper{
+    font-size:20px;
+    
+  }
+  
+  .img{
+   border-radius: 50%;
+   width:180px;
+   margin-top: -50px;
+   background:linear-gradient(to bottom, #f38181, #923645);
+   transition: transform .1s linear;
+
+  }
+  .img img {
+    display:block;
+    transition: opacity .1s linear;
+  }
+  .members-link+.members-link{
+    margin-left:30px;
+  }
+ 
+
+  
+  .mentors {
+    margin-top: 150px;
+    background-color: rgb(138, 138, 219);
+  }
+
+  .mirlan{
+    width: 75%;
+    margin:50px auto 50px auto;
+    text-align:left;
+    line-height: 2;
+    color:black;
+}
+.mirlan-img{
+  width:28%;
+  float:right;
+  margin-left:50px;
+  margin-top:40px;
+}
+.mentors-title{
+      text-align:center;
+      font-size:28px;
+      color:white;
+      padding-top:100px;
+      padding-bottom:40px;
+}
+.mentor-title-descr{
+  text-align: justify;
+  font-size:16px;
+  font-weight:500;
+}
+.turat{
+width:75%;
+  margin:50px auto 50px auto;
+  text-align:left;
+  line-height: 2;
+  color:black;
+}
+.turat-img{
+  width:28%;
+  float:left;
+  margin-right:50px;
+  margin-top:40px;
+}
+.mentors-title{
+      text-align:center;
+      font-size:28px;
+}
+.mentor-title-descr{
+  text-align: justify;
+}
+.oljo{
+  width:75%;
+    margin:50px auto 50px auto;
+    text-align:left;
+    line-height: 2;
+    color:black;
+  }
+  .oljo-img{
+    width:28%;
+    float:right;
+    margin-left:50px;
+    margin-top:40px;
+  }
+  .mentors-title{
+        text-align:center;
+        font-size:28px;
+  }
+  .mentor-title-descr{
+    text-align: justify;
+  }
+  .jaz{
+    width:75%;
+      margin:50px auto 50px auto;
+      text-align:left;
+      line-height: 2;
+      color:black;
+      padding-bottom:120px;
+      
+    }
+    .jaz-img{
+      width:28%;
+      float:left;
+      margin-right:50px;
+      margin-top:40px;
+    }
+    hr{
+      margin-top:100px;
+    }
+  
+    .mentor-title-descr{
+      text-align: justify;
+    }
+    /* FOOTER */
+    .footer{
+      
+      background-color: #505584;
+      padding: 100px 0;
+    }
+    .footer-inner { 
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px
+    }
+    .footer-socialnetworks {
+      display:flex;
+      flex-direction: row;
+
+    }
+    .footer-socialnetworks li{
+      
+      list-style: none;
+      line-height: 3;
+      color:black;
+      font-size: 18px;
+      padding-right: 100px;
+    }
+    .contact-form-wrapper {
+      padding-right: 0;
+      margin-top:30px;
+    }
+    
+    .contact-form {
+      width:50%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 40px 40px 40px 40px;
+      grid-gap: 24px;
+    }
+    
+    .contact-phone,
+    .contact-question {
+      grid-column: 1 / 3;
+    }
+    
+    .contact-text-input {
+      padding: 21px 30px;
+      border: 1px solid #333333;
+      border-radius: 6px;
+    }
+    
+    .contact input::placeholder {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      line-height: 19px;
+      color: rgba(19, 39, 67, 0.5);
+    }
+    
+    .contact-btn {
+      background: #ED4C5C;
+      border: 1.5px solid #ED4C5C;
+      border-radius: 6px;
+      color: #fff;
+    }
+    .footer a{
+      text-decoration: none;
+      color:white;
+    }
+    h3{
+      color:#FF4C29;
+    }
+    .wrapper-title{
+      color:white;
+    }
+    .socialnetworks-list li a:hover{
+      color:#FF4C29;
+    }
+    .heading{
+      color:white;
+    }
+    
+    
